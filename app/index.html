@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI Platinum Roadmap</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="kicker">GRAND THEFT AUTO VI &middot; PLAYSTATION 5 &middot; 55 TROPHIES</p>
+  <h1>Leonida Trophy Guide</h1>
+  <p class="sub">Every official trophy, its own-words guide with sources, and the road to the platinum. Works fully offline — progress is saved on your machine. Tick trophies off as you earn them; the roadmap tells you what to do next.</p>
+  <div class="progress-wrap">
+    <div class="progress-bar"><div id="progressFill"></div></div>
+    <p id="progressText">0 of 55 earned — 0%</p>
+  </div>
+</header>
+
+<main>
+  <section class="controls" aria-label="Filters">
+    <input id="search" type="search" placeholder="Search a trophy or guide…" autocomplete="off">
+    <label>Grade
+      <select id="grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label>Kind
+      <select id="kind">
+        <option value="all">All kinds</option>
+        <option value="story">Story</option>
+        <option value="activity">Activities</option>
+        <option value="collectible">Collectibles</option>
+      </select>
+    </label>
+    <label class="check"><input id="missableOnly" type="checkbox"> Missable only</label>
+    <label class="check"><input id="spoiler" type="checkbox" checked> Hide story spoilers</label>
+    <label class="check"><input id="hideEarned" type="checkbox"> Hide earned</label>
+    <button id="export" type="button">Export progress</button>
+    <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+  </section>
+
+  <section class="roadmap" id="roadmap" aria-label="Roadmap to the platinum">
+    <h2>Roadmap to the platinum</h2>
+    <p class="roadmap-note">Six stages, in order. Story trophies are unmissable — missions replay. Only 3 trophies are flagged missable: do those during their partner or choice windows.</p>
+    <ol class="stages">
+      <li><strong>Stage 1 — Play the story.</strong> Chapters 1–4, the named missions and the final mission: 12 trophies, including the story's gold finale. <span class="stage-count" data-stage="1"></span></li>
+      <li><strong>Stage 2 — Stranger missions.</strong> Finish 8 stranger strands (Andy, Kenton, Billy, Randy, Tyrone + 3 more): 6 trophies, 1 silver. <span class="stage-count" data-stage="2"></span></li>
+      <li><strong>Stage 3 — Activities.</strong> Shooting range golds, races, drone races, fishing, stunts, robberies, Combat Focus and the rest: the biggest stage. <span class="stage-count" data-stage="3"></span></li>
+      <li><strong>Stage 4 — Collectibles &amp; exploration.</strong> Card sets, 100 vehicles, all 52 areas, garages, Scooter Bros, the strange and the scenic. <span class="stage-count" data-stage="4"></span></li>
+      <li><strong>Stage 5 — Cleanup &amp; economy.</strong> 50 challenges, laundering, spending, the partner trophies and the choice count. <span class="stage-count" data-stage="5"></span></li>
+      <li><strong>Stage 6 — Platinum.</strong> 100% completion, then <em>Vice Got a Price!</em> pops on its own. <span class="stage-count" data-stage="6"></span></li>
+    </ol>
+  </section>
+
+  <div class="layout">
+    <section class="list-wrap" aria-label="Trophy checklist">
+      <h2 id="listHeading">Trophy checklist</h2>
+      <p id="countLine"></p>
+      <ul id="rows" class="rows"></ul>
+    </section>
+    <aside class="detail" id="detail" aria-label="Trophy guide">
+      <p class="detail-empty">Click a trophy to read its guide and sources here.</p>
+    </aside>
+  </div>
+
+  <section class="notes">
+    <h2>How this guide is built</h2>
+    <p>Trophy names, descriptions and grades are exactly as PlayStation publishes them — including the 28 hidden trophies, which this app hides behind the spoiler setting until you earn them. Every guide is written in our own words from the official descriptions, and every guide names its sources (Exophase and PSNProfiles trophy pages) beside it. GTA VI is not out yet, so where an exact location or step is not public, the guide says so honestly instead of inventing one.</p>
+    <p class="sources-note">Sources: <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase — GTA VI trophy list</a> &middot; <a href="https://psnprofiles.com/trophies/grand-theft-auto-vi">PSNProfiles — GTA VI trophy list</a>. Links open only when you follow them; the app itself fetches nothing.</p>
+  </section>
+</main>
+
+<footer><p>Leonida Trophy Guide — an unofficial fan guide. Not affiliated with Rockstar Games or PlayStation. Original design; no official artwork or logos are used.</p></footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
